@@ -1,10 +1,10 @@
-const copyButton = document.getElementsByClassName('copy-button');
+let copyButton = document.getElementsByClassName('copy-button');
+let address = document.querySelector('address');
 
 const addressCopy = () => {
-    let address = document.querySelector('address');
-
     address.select();
-    address.setSelectionRange(0, 99999);
 
     navigator.clipboard.writeText(address.value);
 }
+
+copyButton.onclick = addressCopy;
