@@ -20,14 +20,14 @@
 .nav-bar {
     background-color: #FFF;
     width: 100%;
-    height: 10vh;
+    height: 4rem;
     padding: 5px;
     position: fixed;
     top: 0;
     z-index: 5;
 }
 
-.title {
+.nav-bar .title {
     width: 100%;
     float: left;
     background: transparent;
@@ -52,29 +52,17 @@
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 760px)  {
-    
-}
-
-@media screen and (max-width: 375px){
-    .nav-bar {
-        height: 3rem;
-    }
-}
-
  /** MAIN **/
 .main {
     position: relative;
+    display: block;
     top: 4rem;
     width: 100%;
-    height: 75vh;
     color: #FFF;
 }
 
 .swap {
-    width: 50%;
-    height: 100%;
-    display: inline-block;
+    width: 100%;
     background-color: #EE01AF;
     padding: 0.75rem;
 }
@@ -113,25 +101,24 @@
     padding: 3px;
     margin: 2rem 3rem;
     border-radius: 3px;
-    width: 390px;
+}
+
+.swap-button {
+    margin-bottom: 50px;
 }
 
 .copy-button {
     background-color: #DDD;
-    padding: 3px;
     border-radius: 3px;
-    width: 1.5rem;
+    width: 1rem;
     display: inline-block;
     cursor: pointer;
 }
 
 .tokenomics {
-    float: right;
-    width: 50%;
-    height: 100%;
+    width: 100%;
     background-color: #FFF;
     padding: 2rem 3rem;
-    overflow: hidden;
 }
 
 .tokenomics h2 {
@@ -146,14 +133,14 @@
     margin-left: 5rem;
 }
 
+
+/** FOOTER **/
 .footer {
     padding: 1rem;
     color: #FFF;
     background-color: #3F3CFF;
     width: 100%;
-    height: 15vh;
-    position: fixed;
-    bottom: 0;
+    height: 10rem;
 }
 
 .footer p {
@@ -171,7 +158,6 @@
 }
 
 .social-media-navigation img {
-    display: inline-block;
     width: 2rem;
     height: 2rem;
     margin: 0.5rem;
@@ -179,21 +165,16 @@
 }
 
 @media screen and (max-width: 760px)  {
-    .main{
-        display: flex;
-        flex-direction: row;
-        overflow: scroll;
-    }
 
     .swap h2 {
         font-size: 2rem;
     }
 
     .swap h3 {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
+}
 
-    .tokenomics {
-        display: inline-block;
-    }
+@media screen and (max-width: 375px){
+    
 }
